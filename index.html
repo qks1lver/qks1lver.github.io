@@ -1,7 +1,360 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jiun Yen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .card-pub { background-color:#637281; max-width:100%;}
+    .card-pub-header { background-color:#172534; color:white; }
+    .card-pub-body { background-color:#21364b; color:#bcc2c9; }
+    .card-conf { background-color:#fcf7f2; max-width:100%;}
+    .card-conf-header { background-color:#fcf7f2; color:black; }
+    .card-conf-body { background-color:#faf4ed; color:#7c7873; }
+    .jumbotron {
+        background: linear-gradient(to bottom left, #f9e6f0, #fbf0f6, #f9e6f0);
+    }
+    .fa-spacing { margin-right:15px }
+    a { color:gray }
+    a:hover { color:black }
+    .d-flex-shadow {
+        box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5), 0 -5px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="jumbotron jumbotron-fluid" style="margin-bottom:0; padding-left:4%;">
+    <h1>Jiun Y. Yen, PhD</h1>
+    <p>Software Engineer / Data Scientist / Computational Biologist / Amateur Finance Modeler</p>
+    <p class="d-flex flex-columns">
+        <a href="https://github.com/qks1lver" target="_blank"><i class="fab fa-github fa-spacing w3-xxlarge"></i></a>
+        <a href="https://www.linkedin.com/in/jiunyen" target="_blank"><i class="fab fa-linkedin fa-spacing w3-xxlarge"></i></a>
+        <a href="docs/resume_yen.pdf" download="resume_yen.pdf" style="text-decoration:none; font-size:25px"><i class="fa fa-download w3-xxlarge"></i>CV</a>
+    </p>
+</div>
+
+<div class="d-flex d-flex-shadow">
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imgs/presto_1.jpg" alt="presto" style="width:100%;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="imgs/loc_network_1.jpg" alt="cell network" style="width:100%;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="imgs/ml_science_1.jpg" alt="ml science" style="width:100%;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="imgs/open_src_1.jpg" alt="open source" style="width:100%;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slides" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slides" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+
+<div class="p-3">
+    <div class="container">
+        <div class="card-columns">
+            <div class="card" style="max-width:350px;">
+                <div class="card-header bg-dark text-white">Software Engineer</div>
+                <div class="card-body">Since joining Presto in 2019, I've been building
+                    and maintaining numerous <b>APIs</b>
+                    that allow our Presto (Android) devices to communicate with a diversed
+                    set of point-of-sale systems. Functionalities includes sending orders,
+                    getting checks, making payments, etc.</div>
+            </div>
+            <div class="card" style="max-width:350px">
+                <div class="card-header bg-dark text-white">Postdoctoral Fellow</div>
+                <div class="card-body">At Carnegie Institute of Science,
+                    I built machine learning pipelines to
+                    classify functions. One main focus is to predict compartmentalization
+                    of cellular metabolism. I also used the preliminary results from this
+                    work in a proposal that <b>received over $2 million of funding</b>. Advised
+                    by top scientist in the field, Dr. Sue Rhee</div>
+            </div>
+            <div class="card" style="max-width:350px">
+                <div class="card-header bg-dark text-white">Graduate School</div>
+                <div class="card-body">For both my MS and PhD at Virginia Tech, I developed
+                    algorithms and computational pipeliens to <b>predict genetic modifications</b>
+                    that can lead to industrally useful new traits. These include, greater
+                    biomass, elevated sugar yield, and targeted amino-acid enrichment.
+                    Advised by outstanding PIs, Dr. Ryan Senger and Dr. Glenda Gillaspy
+                    (Dep. Biochem. head)</div>
+            </div>
+        </div>
+        <div class="card-columns">
+            <div class="card" style="max-width:350px">
+                <div class="card-header bg-secondary text-white">Redtide (Github repo)</div>
+                <div class="card-body">Motivates by the question of "how to model stock
+                    movement?" I built Redtide to scrape stock history and company financial
+                    data. I'm improving it continuously. Most recent change is adding a
+                    tradebot that trades on Robinhood. Please check it out, and let me know
+                    what you think!
+                    <a href="https://github.com/qks1lver/redtide" target="_blank">Redtide repo</a></div>
+            </div>
+            <div class="card" style="max-width:350px">
+                <div class="card-header bg-secondary text-white">Kaggle datasets</div>
+                <div class="card-body">There's a huge community on Reddit that's interested
+                    in modeling the stock market, r/algotrading. I often share the data that
+                    I obtained with Redtide on Kaggle and Reddit so we can all explore how we
+                    can predict stock market's future. Please checkout my datasets, thanks!
+                    <a href="https://www.kaggle.com/qks1lver/amex-nyse-nasdaq-stock-histories" target="_blank">
+                        Stock data on Kaggle</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex-shadow" style="background:linear-gradient(to bottom right, #0d151e, #1a2b3c, #172534, #091016)">
+    <h2 class="p-3" style="color: white;">Publications</h2>
+    <div class="d-flex p-3">
+        <div class="container card-columns">
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    Co-suppression of AtMIPS demonstrates cooperation of MIPS1, MIPS2 and MIPS3 in maintaining myo-inositol synthesis
+                    <a href="https://doi.org/10.1007/s11103-018-0737-6" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td>Fleet, C. M., <font color="white">Yen, J. Y.</font>, Hill, E. A., Gillaspy, G. E.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Plant Molecular Biology</td></tr>
+                            <tr><th>Year</th>
+                                <td>2018</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    Model-guided Analysis of Plant Metabolism and Design of Metabolic Engineering Strategies
+                    <a href="http://hdl.handle.net/10919/85179" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td><font color="white">Yen, J. Y.</font>, Gillaspy, G. E., Senger, R. S.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Virginia Tech Doctoral Dissertations</td></tr>
+                            <tr><th>Year</th>
+                                <td>2017</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    SyM-GEM: A Biosynthetic and Metabolic Pathway Builder and Genome-Scale Model Database
+                    <a href="https://www.gavinpublishers.com/articles/Research-Article/Advances-in-Biochemistry-and-Biotechnology-ISSN-2574-7258/SyM-GEM-A-Pathway-Builder-for-Genome-Scale-Models" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td>Nazem-Bokaee, H., <font color="white">Yen, J. Y.</font>, Athamneh, A. I. M., Apte, A. A., McAnulty, M. J., Senger, R. S.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Advances in Biochemistry and Biotechnology</td></tr>
+                            <tr><th>Year</th>
+                                <td>2017</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    Designing metabolic engineering strategies with genome-scale metabolic flux modeling
+                    <a href="https://www.mesb.bse.vt.edu/files/Yen%20et%20al%20Senger%202015%20Advances%20in%20Genomics%20and%20Genetics.pdf" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td><font color="white">Yen, J.</font>, Tanniche, I., Fisher, A., Gillaspy, G., Bevan, D., Senger, R.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Advances in Genomics and Genetics</td></tr>
+                            <tr><th>Year</th>
+                                <td>2015</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    A review of genome-scale metabolic flux modeling of anaerobiosis in biotechnology
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2211339814000707" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td>Senger, R. S., <font color="white">Yen, J. Y.</font>, Fong, S. S.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Current Opinion in Chemical Engineering</td></tr>
+                            <tr><th>Year</th>
+                                <td>2014</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    Deriving metabolic engineering strategies from genome-scale modeling with flux ratio constraints
+                    <a href="https://doi.org/10.1002/biot.201200234" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td><font color="white">Yen, J. Y.</font>, Nazem-Bokaee, H., Freedman, B. G., Athamneh, A. I. M., Senger, R. S.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Biotechnology Journal</td></tr>
+                            <tr><th>Year</th>
+                                <td>2013</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    Are we ready for genome-scale modeling in plants?
+                    <a href="https://doi.org/10.1016/j.plantsci.2012.04.010" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td>Collakova, E., <font color="white">Yen, J. Y.</font>, Senger, R. S.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Plant Science</td></tr>
+                            <tr><th>Year</th>
+                                <td>2012</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    Genome-scale modeling using flux ratio constraints to enable metabolic engineering of clostridial metabolism in silico
+                    <a href="https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-6-42" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td>McAnulty, M. J., <font color="white">Yen, J. Y.</font>, Freedman, B. G., Senger, R. S.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>BMC Systems Biology</td></tr>
+                            <tr><th>Year</th>
+                                <td>2012</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-pub">
+                <div class="card-header card-pub-header">
+                    Minimum requirements of flagellation and motility for infection of agrobacterium sp. strain H13-3 by flagellotropic bacteriophage 7-7-1
+                    <a href="https://doi.org/10.1128/AEM.01082-12" class="stretched-link" target="_blank"></a></div>
+                <div class="card-body card-pub-body">
+                    <table>
+                        <tbody>
+                            <tr><th style="width:80px">Author</th>
+                                <td><font color="white">Yen, J. Y.</font>, Broadway, K. M., Scharf, B. E.</td></tr>
+                            <tr><th>Journal</th>
+                                <td>Applied and Environmental Microbiology</td></tr>
+                            <tr><th>Year</th>
+                                <td>2012</td></tr></tbody></table></div></div>
+
+        </div>
+    </div>
+</div>
+
+<div style="background-color:#f9f0e6;">
+    <h2 class="p-3">Conference Talks</h2>
+    <div class="d-flex p-3">
+        <div class="container card-columns">
+
+            <div class="card m-2 card-conf">
+                    <div class="card-header card-conf-header">
+                        A genome-scale algorithmic approach for metabolic engineering of plants</div>
+                    <div class="card-body card-conf-body">
+                        <table>
+                            <tbody>
+                                <tr><th style="width:100px">Author</th>
+                                    <td><font color="black">Yen, J.</font>, Gillaspy, G., Senger, R.</td></tr>
+                                <tr><th>Conference</th>
+                                    <td>Great Lakes Bioinformatics and the Canadian Computational Biology Conference</td></tr>
+                                <tr><th>Location</th>
+                                    <td>Toronto, Canada</td></tr>
+                                <tr><th>Year</th>
+                                    <td>2016</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-conf">
+                    <div class="card-header card-conf-header">
+                        Systems Metabolic Engineering of Arabidopsis for Increased Cellulose Production</div>
+                    <div class="card-body card-conf-body">
+                        <table>
+                            <tbody>
+                                <tr><th style="width:100px">Author</th>
+                                    <td><font color="black">Yen, J.</font>, Gillaspy, G., Senger, R.</td></tr>
+                                <tr><th>Conference</th>
+                                    <td>American Society for Biochemistry and Molecular Biology - Experimental Biology</td></tr>
+                                <tr><th>Location</th>
+                                    <td>Boston, MA</td></tr>
+                                <tr><th>Year</th>
+                                    <td>2015</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-conf">
+                    <div class="card-header card-conf-header">
+                        Systems metabolic engineering of Arabidopsis for increased cellulose production</div>
+                    <div class="card-body card-conf-body">
+                        <table>
+                            <tbody>
+                                <tr><th style="width:100px">Author</th>
+                                    <td><font color="black">Yen, J.</font>, Gillaspy, G., Senger, R.</td></tr>
+                                <tr><th>Conference</th>
+                                    <td>Gordon Research Seminar – Plant Metabolic Engineering</td></tr>
+                                <tr><th>Location</th>
+                                    <td>Waterville Valley, NH</td></tr>
+                                <tr><th>Year</th>
+                                    <td>2013</td></tr></tbody></table></div></div>
+
+            <div class="card m-2 card-conf">
+                    <div class="card-header card-conf-header">
+                        The utilization of genome-scale model to explore mutations that increase cellulose in Arabidopsis thaliana</div>
+                    <div class="card-body card-conf-body">
+                        <table>
+                            <tbody>
+                                <tr><th style="width:100px">Author</th>
+                                    <td><font color="black">Yen, J.</font>, Gillaspy, G., Senger, R.</td></tr>
+                                <tr><th>Conference</th>
+                                    <td>The Southern Section of the American Society of Plant Biologists</td></tr>
+                                <tr><th>Location</th>
+                                    <td>Myrtle Beach, SC</td></tr>
+                                <tr><th>Year</th>
+                                    <td>2012</td></tr></tbody></table></div></div>
+
+        </div>
+    </div>
+</div>
+
+<div style="background:linear-gradient(to bottom right, #0d151e, #1a2b3c, #172534, #091016)">
+    <h2 class="p-3" style="color: white;">Contact</h2>
+    <div class="d-flex p-3">
+        <div class="container">
+            <div class="card flex-row flex-wrap" style="width:320px">
+                <div class="card-header p-0">
+                    <img src="imgs/me.jpg" alt="Jiun" style="max-height:110px">
+                </div>
+                <div class="card-block p-3">
+                    <p><i class="fa fa-phone fa-fw"></i> 1 (757) 274-5235</p>
+                    <p><i class="fa fa-envelope fa-fw"> </i> jiunyyen@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
